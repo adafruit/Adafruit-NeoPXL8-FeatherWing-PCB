@@ -1,6 +1,6 @@
 ## Adafruit NeoPXL8 Friend and FeatherWing PCB
 
-<a href="http://www.adafruit.com/products/3249"><img src="assets/3249.jpg?raw=true" width="500px"><br/>
+<a href="http://www.adafruit.com/products/3249"><img src="assets/3249.jpg?raw=true" width="500px">
 <a href="http://www.adafruit.com/products/3975"><img src="assets/3975.jpg?raw=true" width="500px"><br/>
 Click here to purchase one from the Adafruit shop</a>
 
@@ -20,7 +20,7 @@ Resident pixel-pro Paint Your Dragon (who coined the name NeoPixel dont-cha-know
 
 Thus is born the [NeoPXL8 Arduino library](https://github.com/adafruit/Adafruit_NeoPXL8) and the **NeoPXL8 Friend and Featherwing!** The library runs on our Feather M0's (the Basic Proto, Adalogger, Bluefruit, Express, and others) and handles all the NeoPixeling for you, up to **8 strands of concurrent DMA output** each one can be 250 pixels long for a total of 8 x 250 = 2000 pixels. That leaves you some RAM for your code to run in as well - the theoretical max is 340 pixels per strand but you'd be using all the RAM on the M0 chip.
 
-To make connection easy, this Featherwing does the level-shifting and pin arrangements for you. All 8 strands have a level shifter that converts the 3.3V logic level to 5V logic, there's a little switch-cap converter that generates the clean 5V power supply for you. Then a 100 ohm resistor in line after the buffer reduces ringing on long wiring runs.
+To make connection easy, these boards do the level-shifting and pin arrangements for you. All 8 strands have a level shifter that converts the 3.3V logic level to 5V logic, there's a little switch-cap converter that generates the clean 5V power supply for you. Then a 100 ohm resistor in line after the buffer reduces ringing on long wiring runs.
 
 The breadboard friendly of the NeoPXL8 Friend design plugs into your perf board or breadboard, wire up the 8 data lines, ground line and a 3-5V power supply for the level shifter boost (10mA max draw). Out comes beautiful 5V logic for any NeoPixel compatibles.
 
