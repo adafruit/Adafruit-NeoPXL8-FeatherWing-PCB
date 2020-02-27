@@ -4,11 +4,12 @@
 <a href="http://www.adafruit.com/products/3975"><img src="assets/3975.jpg?raw=true" width="500px"><br/>
 Click here to purchase one from the Adafruit shop</a>
 
-PCB files for the Adafruit NeoPXL8 Friend and FeatherWing. 
+PCB files for the Adafruit NeoPXL8 Friend and FeatherWings.
 
 Format is EagleCAD schematic and board layout
 * https://www.adafruit.com/product/3975 (friend)
-* https://www.adafruit.com/product/3249 (wing)
+* https://www.adafruit.com/product/3249 (M0 wing)
+* https://www.adafruit.com/product/4537 (M4 wing)
 
 ### Description
 
@@ -18,7 +19,7 @@ But, at some point, every NeoPixel'er bumps into the constraints of that single-
 
 Resident pixel-pro Paint Your Dragon (who coined the name NeoPixel dont-cha-know!) took on this challenge and has succeeded gloriously. By carefully examining the ATSAMD21 datasheet he noticed you could use the Timer 0 in 'waveform' mode, and create 8 unique waveforms over DMA that would handle all the pixel-pushing for you.
 
-Thus is born the [NeoPXL8 Arduino library](https://github.com/adafruit/Adafruit_NeoPXL8) and the **NeoPXL8 Friend and Featherwing!** The library runs on our Feather M0's (the Basic Proto, Adalogger, Bluefruit, Express, and others) and handles all the NeoPixeling for you, up to **8 strands of concurrent DMA output** each one can be 250 pixels long for a total of 8 x 250 = 2000 pixels. That leaves you some RAM for your code to run in as well - the theoretical max is 340 pixels per strand but you'd be using all the RAM on the M0 chip.
+Thus is born the [NeoPXL8 Arduino library](https://github.com/adafruit/Adafruit_NeoPXL8) and the **NeoPXL8 Friend and Featherwings!** The library runs on our M0 and M4 boards (the Basic Proto, Adalogger, Bluefruit, Express, and others) and handles all the NeoPixeling for you, up to **8 strands of concurrent DMA output**. On M0 boards, each one can be about 250 pixels long for a total of 8 x 250 = 2000 pixels. On M4 boards, it's about 6 times as much. That leaves you some RAM for your code to run in as well.
 
 To make connection easy, these boards do the level-shifting and pin arrangements for you. All 8 strands have a level shifter that converts the 3.3V logic level to 5V logic, there's a little switch-cap converter that generates the clean 5V power supply for you. Then a 100 ohm resistor in line after the buffer reduces ringing on long wiring runs.
 
@@ -41,5 +42,5 @@ Adafruit invests time and resources providing this open source design, please su
 
 Designed by Limor Fried/Ladyada for Adafruit Industries.
 
-Creative Commons Attribution/Share-Alike, all text above must be included in any redistribution. 
+Creative Commons Attribution/Share-Alike, all text above must be included in any redistribution.
 See license.txt for additional details.
